@@ -1,0 +1,381 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: #000;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-inner {
+    height: 500px;
+    width: 100%;
+}
+
+.brand-txt {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.cmnts {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 80px;
+    text-align: center  ;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 100px 100px;
+    max-width: 1440px;
+    margin-bottom: 200px;
+    padding: 20px;
+}
+
+/* CARDS */
+
+.card_img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.card-header {
+    display: flex; 
+    align-items: center;
+}
+
+.card-header h4 {
+    color: #000;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.card-header p {
+    font-size: 12px;
+    opacity: 50%;
+}
+
+.card-bg-orange {
+    background-color: orange;
+    border-radius: 30px;
+}
+
+.card-bg-red {
+    background-color: brown;
+    border-radius: 30px;
+}
+
+.card-bg-grey {
+    background-color: grey;
+    border-radius: 30px;
+}
+
+.card-bg-green {
+    background-color: green;
+    border-radius: 30px;
+}
+
+.card-group {
+    border-radius: 20px;
+    padding:  10px;
+    box-shadow: rgba(162, 170, 146, 0.15) 0px 48px 100px 0px;
+}
+
+.card-img-top {
+    height: 50vh;
+
+}
+
+.card_lead {
+    padding: 10px;
+    line-height: 1.3rem;
+}
+
+/* EQUIPMENTS */
+
+.fixer {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.equ-txt {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.equipments {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.equipments img {
+   border-radius: 30px;
+   background-size: cover;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #111111;
+    color: #fff;
+    height: 100px;
+}
+
+.ftr-txt {
+    padding-left: 200px;
+    padding-top: 30px;
+}
+
+.social {
+    padding-right: 350px;
+    padding-top: 40px;
+    font-size: 14px;
+    float: right;
+}
+
+@media only screen and  (max-width: 768px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media only screen and (max-width: 480px ) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .brand-txt {
+        font-size: 20px;
+    }
+
+    .cmnts {
+        font-size: 20px;
+    }
+
+    .testimonials {
+        justify-content: center;
+        width: 50%;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 12px;
+        display: flex;
+    }
+}
+
+.rez-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+
+/*booking */
+
+body {
+    background-image: #000;
+}
+
+.section {
+    position: relative;
+    height: 100vh
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+#booking {
+    font-family: 'Raleway', sans-serif
+}
+
+.booking-form {
+    position: relative;
+    max-width: 642px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    overflow: hidden;
+    background-image: url('https://i.imgur.com/8z1tx3u.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 20
+}
+
+.booking-form::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1
+}
+
+.booking-form .form-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px
+}
+
+.booking-form .form-header h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 42px;
+    margin: 0px;
+    color: #fff
+}
+
+.booking-form .form-group {
+    position: relative;
+    margin-bottom: 30px
+}
+
+.booking-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 60px;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 0px 2px transparent;
+    box-shadow: 0px 0px 0px 2px transparent;
+    -webkit-transition: 0.2s;
+    transition: 0.2s
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form .form-control:focus {
+    -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+    box-shadow: 0px 0px 0px 2px #ff8846
+}
+
+.booking-form input[type="date"].form-control {
+    padding-top: 16px
+}
+
+.booking-form input[type="date"].form-control:invalid {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form input[type="date"].form-control+.form-label {
+    opacity: 1;
+    top: 10px
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.booking-form select.form-control:invalid {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px
+}
+
+.booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.booking-form select.form-control option {
+    color: #000
+}
+
+.booking-form .form-label {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    opacity: 0;
+    color: #ff8846;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    height: 15px;
+    line-height: 15px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all
+}
+
+.booking-form .form-group.input-not-empty .form-control {
+    padding-top: 16px
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+    opacity: 1;
+    top: 10px
+}
+
+.booking-form .submit-btn {
+    color: #fff;
+    background-color: #e35e0a;
+    font-weight: 700;
+    height: 60px;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+    opacity: 0.9
+}
